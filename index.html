@@ -1,0 +1,129 @@
+<html>
+    <head>
+        <title>Ages...</title>
+        <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+        <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <div class="open-page active">
+            <a href="#" class="button" onclick="openFullscreen()">
+                <span class="button__text">Open</span>
+                <img src="cone.png" alt="" class="button__cone">
+                <img src="torus.png" alt="" class="button__torus">
+                <img src="icosahedron.png" alt="" class="button__icosahedron">
+                <img src="sphere.png" alt="" class="button__sphere">
+            </a>
+        </div>
+        
+        <div class="wrapper pre"> 
+            <div class="frame">
+   
+                <div class="time">
+                    <p class="title">
+                        <span style="--i:0;">Time</span>
+                        <span style="--i:1;">we</span>
+                        <span style="--i:2;">spent</span>
+                        <span style="--i:3;">together ...</span>
+                    </p>
+                    <div class="container">
+                        <div class="Tcomp" style="--i:0; --j:5;">
+                            <p>Years</p>
+                            <div class="tt" id="Y1"></div>
+                        </div>
+                        <div class="Tcomp" style="--i:1; --j:4;">
+                            <p>Months</p>
+                            <div class="tt" id="M1"></div>
+                        </div>
+                        <div class="Tcomp" style="--i:2; --j:3;">
+                            <p>Days</p>
+                            <div class="tt" id="D1"></div>
+                        </div>
+                        <div class="Tcomp" style="--i:3; --j:2;">
+                            <p>Hours</p>
+                            <div class="tt" id="h1"></div>
+                        </div>
+                        <div class="Tcomp" style="--i:4; --j:1;">
+                            <p>Minutes</p>
+                            <div class="tt" id="m1"></div>
+                        </div>
+                        <div class="Tcomp" style="--i:5; --j:0;">
+                            <p>Seconds</p>
+                            <div class="tt" id="s1"></div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="ages">
+                    <div class="ele">
+                        <p class="ton ttl1" id="ttl1"></p>
+                        <div class="con cc1">
+                            <div class="tcom" style="--i:0; --j:5;">
+                                <p>Years</p>
+                                <div class="tt" id="Y2"></div>
+                            </div>
+                            <div class="tcom" style="--i:1; --j:4;">
+                                <p>Months</p>
+                                <div class="tt" id="M2"></div>
+                            </div>
+                            <div class="tcom" style="--i:2; --j:3;">
+                                <p>Days</p>
+                                <div class="tt" id="D2"></div>
+                            </div>
+                            <div class="tcom" style="--i:3; --j:2;">
+                                <p>Hours</p>
+                                <div class="tt" id="h2"></div>
+                            </div>
+                            <div class="tcom" style="--i:4; --j:1;">
+                                <p>Minutes</p>
+                                <div class="tt" id="m2"></div>
+                            </div>
+                            <div class="tcom" style="--i:5; --j:0;">
+                                <p>Seconds</p>
+                                <div class="tt" id="s2"></div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="ele">
+                        <p class="ton ttl2" id="ttl2"></p>
+                        <div class="con cc2">
+                            <div class="tcom" style="--i:0; --j:5;">
+                                <p>Years</p>
+                                <div class="tt" id="Y3"></div>
+                            </div>
+                            <div class="tcom" style="--i:1; --j:4;">
+                                <p>Months</p>
+                                <div class="tt" id="M3"></div>
+                            </div>
+                            <div class="tcom" style="--i:2; --j:3;">
+                                <p>Days</p>
+                                <div class="tt" id="D3"></div>
+                            </div>
+                            <div class="tcom" style="--i:3; --j:2;">
+                                <p>Hours</p>
+                                <div class="tt" id="h3"></div>
+                            </div>
+                            <div class="tcom" style="--i:4; --j:1;">
+                                <p>Minutes</p>
+                                <div class="tt" id="m3"></div>
+                            </div>
+                            <div class="tcom" style="--i:5; --j:0;">
+                                <p>Seconds</p>
+                                <div class="tt" id="s3"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="slider hide">
+                <button class="btn1" id="baka1" onclick="disableButton()">Our Time Together</button>
+                <button class="btn2" id="baka2" onclick="disableButton()">Our Current Ages</button>
+                <span class="highlighter"></span>
+            </div>
+            <div class="bgg"></div>
+            <span id="togg"><ion-icon name="grid"></ion-icon></span>
+        </div>
+        <script src="script.js"></script>
+    </body>
+</html>
